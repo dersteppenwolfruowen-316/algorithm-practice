@@ -8,7 +8,7 @@ class Solution:
                 res += 1
             else:
                 kind[c] += 1
-            
+            # 注意窗口<w的也成为窗口
             left  = i+1-w
             if left >= 0:
                 kind[arrivals[left]] -= 1
